@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import useContract from '../hooks/useContract';
 import '../index.css';
 
 const CreateCampaign = () => {
-  const { createCampaign } = useContract();
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -14,7 +12,7 @@ const CreateCampaign = () => {
   function onSubmitHandler(event) {
     event.preventDefault();
     console.log(formData);
-    createCampaign(formData);
+    //***************Create Campaign******************** */
   }
   return (
     <div className="create-campaign">

@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import useContract from '../hooks/useContract';
 import '../index.css';
 
 const CampaignDetail = () => {
   const params = useParams();
-  const { getCampaignDetails, donate } = useContract();
   const [campaign, updateCampaign] = useState(null);
   const [amount, setAmount] = useState(0);
   useEffect(() => {
     const getCampaign = async () => {
-      const campaign = await getCampaignDetails(params.id);
-      updateCampaign(campaign);
+      //****************Get Campaign Details and update campaign */
     };
     getCampaign();
   }, []);
@@ -49,7 +46,7 @@ const CampaignDetail = () => {
             />
             <button
               onClick={() => {
-                donate(params.id, amount);
+                //***************Donate to Campaign******************** */
               }}
             >
               Donate

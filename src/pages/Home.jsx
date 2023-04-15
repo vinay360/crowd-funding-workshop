@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import useContract from '../hooks/useContract';
 import Card from '../components/Card';
 import '../index.css';
 
 const Home = () => {
-  const { getCampaigns } = useContract();
   const [campaigns, setCampaigns] = useState([]);
   useEffect(() => {
-    getCampaigns().then((c) => {
-      setCampaigns(c);
-    });
+    //getCampaigns
   }, []);
   return (
     <div className="home">
