@@ -69,3 +69,90 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.image {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  border: 3px solid #f9f9f9;
+  margin-top: 2rem;
+  align-items: center;
+  padding: 10px;
+  border-radius: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 3px solid #646cff;
+}
+
+.card:hover .card__title {
+  color: #646cff;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  transition: color 0.25s;
+}
+
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 5%;
+}
+
+.campaign-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.create-campaign {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed whitesmoke;
+  border-radius: 5%;
+  padding: 3%;
+}
+
+.form-field {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  align-self: center;
+}
